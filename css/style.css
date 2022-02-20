@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.58;
+}
+.welcome{
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+}
+/* Welcome Icon */
+.welcomeIcon{
+    display: inline-flex;
+    text-align: center;
+    margin-top: 5px;
+}
+.welcomeList{
+    list-style: none;
+    margin: 50% -10% 0 -110%;
+    padding: 0 200% 0 0;
+}
+.fab { 
+    transform: scale(2,2); 
+}
+
+/* first box */
+.container{
+    position: relative;
+    margin: 5% 20% 0 20%;
+    width: auto;
+}
+.info, .project-card, .skill, .education, .language-box, .contact, .myteam-box{
+    display: block;
+    background-color: white;
+    padding: 4%;
+    margin-bottom: 40px;
+    height: auto;
+}
+.info::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.myteam-box::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.test img{
+    width: 20%;
+    float: left;
+    margin-right: 4%;
+}
+.infoText{
+    margin-left: 100px;
+    color: gray;
+}
+
+/* Project box */
+.releaseDate{
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project{
+    display: flex;
+}
+.project2, .project3{
+    margin: 0 5%;
+    text-align:justify;
+}
+
+/* SKill Box */
+.htmlSkill, .cssSkill, .jsSkill, .nodeJSSkill, .csSkill{
+    display: flex;
+    margin-bottom: 10px;
+}
+.colorBox1, .colorBox2, .colorBox3, .colorBox4, .colorBox5::placeholder{
+    text-align: center;
+    font-weight: bold;
+}
+.colorBox1{
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 50px;
+    background: linear-gradient(to right, coral 70%, white 50%);
+}
+.colorBox2{
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 63px;
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.734) 50%, white 50%);
+}
+.colorBox3{
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 76px;
+    background: linear-gradient(to right, rgba(237, 237, 56, 0.734) 60%, white 50%);
+}
+.colorBox4{
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 24px;
+    background: linear-gradient(to right, darkseagreen 40%, white 40%);
+}
+.colorBox5{
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 76px;
+    background: linear-gradient(to right, violet 60%, white 50%);
+
+}
+/* Language Box */
+.language{
+    display: flex;
+}
+.language p{
+    margin-right: 15%;
+    font-weight: bold;
+}
+/* My team Box */
+.member{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member1, .member2,.member3 {
+    /* margin-left: 10px; */
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+/* Contact Box */
+.contactText{
+    width: auto;
+    display: block;
+}
+.emailBox, .subjectBox, .messageBox{
+    width: 100%;
+    background-color: rgb(237, 236, 236);
+    border-radius: 5px;
+    border: 0cm;
+    padding-left: 1%;
+}
+.emailBox{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.subjectBox{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.messageBox{
+    height: 50px;
+    padding: 2% 1% 10% 1%;
+}
+
+.messageBox::placeholder{
+    text-align: start;
+}
+.emailBox, .subjectBox, .messageBox,::placeholder{
+    font-size: 17px;
+}
+.submitButton{
+    border-radius: 25px;
+    background-image: linear-gradient(90deg,#ff6975 0,#ff0060);
+    margin-top: 10px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+}
+.submitButton:hover{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footerText{
+    text-align: center;
+}
+.goodbyeIcon{
+    display: inline-flex;
+    text-align: center;
+    margin: 1% 7% 3% -7%;
+}
+.goodbyeList{
+    list-style-type: none;
+    margin: 50% -5% 0 -110%;
+    padding: 0 200% 0 0;
+}
