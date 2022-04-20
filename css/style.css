@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: lightgray;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.58;
+    transition: ease 1s;
 }
 .welcome{
     display: block;
@@ -27,6 +27,10 @@ body{
     margin: 50% -10% 0 -110%;
     padding: 0 200% 0 0;
 }
+.welcomeList a{
+    text-decoration: none;
+    color: darkslateblue;
+}
 .fab { 
     transform: scale(2,2); 
 }
@@ -43,24 +47,31 @@ body{
     padding: 4%;
     margin-bottom: 40px;
     height: auto;
+    border-radius: 20px;
 }
 .info::after{
     content: "";
     clear: both;
     display: table;
 }
+.info-content{
+    display: flex;
+    justify-content: space-between;
+}
+
 .myteam-box::after{
     content: "";
     clear: both;
     display: table;
 }
 .test img{
-    width: 20%;
+    width: 200px;
     float: left;
     margin-right: 4%;
+    border-radius: 10px;
 }
 .infoText{
-    margin-left: 100px;
+    margin-left: 20px;
     color: gray;
 }
 
@@ -128,17 +139,33 @@ body{
 }
 /* My team Box */
 .member{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.member1, .member2,.member3 {
-    /* margin-left: 10px; */
     display: block;
     text-align: center;
-    width: 50%;
 }
-
+.pic-box{
+    width: 30%;
+    border-radius: 20%;
+}
+.name-box{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.job-box{
+    color:darkturquoise;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+}
+.space{
+    margin: 0 10px;
+}
+.prev-arrow, .next-arrow{
+    font-size: 25px;
+}
+.prev-arrow, .next-arrow :hover{
+    cursor: pointer;
+}
 /* Contact Box */
 .contactText{
     width: auto;
@@ -183,19 +210,21 @@ body{
 }
 
 .footer{
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
 }
 .footerText{
     text-align: center;
 }
 .goodbyeIcon{
-    display: inline-flex;
-    text-align: center;
-    margin: 1% 7% 3% -7%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 .goodbyeList{
     list-style-type: none;
-    margin: 50% -5% 0 -110%;
-    padding: 0 200% 0 0;
+    margin: 20px;
+}
+.goodbyeList a{
+    color:darkslateblue;
 }
